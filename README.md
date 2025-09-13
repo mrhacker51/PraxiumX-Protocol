@@ -1,48 +1,101 @@
 PraxiumX Whitepaper
-1. Giriş ve Vizyon
-PraxiumX (PRX), merkeziyetsiz, güvenli ve şeffaf bir değer transferi ve yönetim platformu olarak tasarlanmış bir kripto para birimidir. Projemiz, Pragmatizm (Praxism) ve Eksponansiyel Büyüme (X) prensiplerini bir araya getirerek, sadece bir token olmanın ötesinde, kullanıcılara ve topluluğa değer katan bir ekosistem kurmayı hedefler. PRX, akıllı sözleşmeler aracılığıyla güvenli, otomatik ve ölçeklenebilir bir yapı sunarak finansal teknolojinin geleceğini şekillendirme vizyonunu taşır.
+Vizyon ve Misyon
+PraxiumX, merkeziyetsiz bir ekosistem inşa etme vizyonuyla ortaya çıkan, yenilikçi bir kripto para projesidir. Misyonumuz, kullanıcılarımıza güvenilir, şeffaf ve topluluk odaklı bir platform sunarak Web3'ün potansiyelini maksimize etmektir. Projemiz, token sahiplerinin aktif rol alabileceği ve ekosistemin geleceğini şekillendirebileceği bir yönetişim modeli üzerine kurulmuştur.
 
-2. Token Ekonomisi (Tokenomics)
-PraxiumX'in token ekonomisi, uzun vadeli sürdürülebilirlik, adil dağıtım ve ekonomik istikrar üzerine kurulmuştur.
+Tokenomics ve Yönetişim Modeli
+PraxiumX Token (PRX) Ekonomisi
+PraxiumX Token ($PRX), ekosistemin temelini oluşturan ve çeşitli işlevlere hizmet eden bir BEP-20 (veya ERC-20) token'ıdır. PRX, sadece bir değer transferi aracı olmanın ötesinde, sahiplerine ekosistem içinde aktif bir rol üstlenme fırsatı sunar.
 
-Toplam Arz (Max Supply): PraxiumX'in maksimum arzı [Belirtilen Değer] ile sınırlıdır. Bu, tokenın değerinin zamanla artmasına katkı sağlayacak kıtlık prensibini destekler.
+Token Arzı ve Dağıtımı
+PRX'in toplam arzı 1.000.000.000 (1 Milyar) olarak belirlenmiştir. Bu sabit arz, token'ın enflasyona karşı korunmasına yardımcı olur. Token dağıtımı aşağıdaki gibi planlanmıştır:
 
-Token Dağıtımı:
+%40 (400,000,000 PRX): Topluluk Teşvikleri ve Staking Ödülleri
 
-%[Değer] - Halka Arz (Public Sale): Topluluğa adil dağıtım için ayrılmıştır.
+Bu kısım, ağa katılımı teşvik etmek ve likidite sağlamak için zaman içinde dağıtılacaktır.
 
-%[Değer] - Takım ve Danışmanlar: Uzun vadeli projeye bağlılığı sağlamak için vesting (hak kazanma) programına tabidir.
+%25 (250,000,000 PRX): Vesting (Kurucu ve Takım Üyeleri)
 
-%[Değer] - Pazarlama ve Ekosistem Geliştirme: Yeni kullanıcıları çekmek ve dApp gelişimini finanse etmek için kullanılır.
+Kilitleme ve hak ediş (vesting) planıyla dağıtılacak bu token'lar, projenin uzun vadeli başarısına olan bağlılığı göstermektedir.
 
-%[Değer] - Likidite Havuzu: Erken aşama likidite sağlamak ve fiyat istikrarını desteklemek için ayrılmıştır.
+%15 (150,000,000 PRX): Likidite Sağlayıcıları ve Borsalar
 
-Transfer Ücretleri: Her transfer işleminden [Belirtilen Değer]% oranında bir ücret alınır. Bu ücretin %[Değer]'i yakılır (burn), kalan kısmı ise hazineye aktarılır. Bu mekanizma, deflasyonist bir etki yaratır ve ağın sürdürülebilirliğini destekler.
+Başlangıç likiditesi sağlamak ve token'ın piyasada işlem görmesini kolaylaştırmak için ayrılmıştır.
 
-Vesting (Hak Kazanma): Takım ve stratejik partner tokenları, belirli bir zaman çizelgesine göre serbest bırakılacaktır. Bu, token arzının kontrollü bir şekilde artmasını sağlar ve ani satış baskısını önler.
+%10 (100,000,000 PRX): Geliştirme ve Operasyonel Giderler
 
-3. Güvenlik ve Teknoloji
-PraxiumX akıllı sözleşmesi, en üst düzey güvenlik standartlarına uygun olarak tasarlanmıştır.
+Projenin sürekli gelişimi, güvenlik denetimleri ve operasyonel maliyetler için kullanılacaktır.
 
-Solidity ve OpenZeppelin: Sözleşmeler, Ethereum'un ana programlama dili olan Solidity ile OpenZeppelin'in güvenilir ve denetlenmiş kütüphaneleri kullanılarak geliştirilmiştir.
+%10 (100,000,000 PRX): Hazine (Treasury)
 
-Yükseltilebilirlik (UUPS): Sözleşme, UUPS (Universal Upgradeable Proxy Standard) kullanılarak yükseltilebilir bir yapıdadır. Bu, gelecekteki güvenlik güncellemeleri veya yeni özelliklerin entegrasyonu için esneklik sağlar.
+Gelecekteki stratejik ortaklıklar, ekosistem hibeleri ve beklenmedik durumlar için ayrılmıştır.
 
-Timelock (Zaman Kilidi): Kritik yönetici işlemleri (örneğin, maksimum arzın veya ücretlerin değiştirilmesi), hemen değil, bir gecikme süresi (Timelock) sonrası yürürlüğe girer. Bu, olası bir yönetici anahtarının ele geçirilmesi durumunda projenin anında zarar görmesini engeller.
+Token Yardımcı Programları (Utility)
+PRX token'ı, ekosistem içinde birden fazla temel işleve hizmet eder:
 
-Erişim Kontrolü ve Multisig: Sözleşme içindeki yetkiler, farklı rollere ayrılmıştır. En kritik rollerin bir çoklu imza (multisig) cüzdanına atanmasıyla, operasyonel riskler minimize edilmiştir.
+Yönetişim: PRX sahipleri, projenin geleceği hakkında oy kullanabilir ve teklifler sunabilirler. Bu, yönetişim modelimizin temelini oluşturur.
 
-Reentrancy Guard: Harici çağrılar içeren fonksiyonlar, yeniden giriş saldırılarına karşı korunmaktadır.
+Staking: Kullanıcılar, ağ güvenliğine katkıda bulunarak ve token'larını kilitleyerek pasif gelir elde edebilirler.
 
-Kara Liste (Blacklist): Yasadışı veya kötü niyetli faaliyetlerde bulunan adresleri engelleme yeteneği, topluluğu korumak için bir güvenlik katmanı oluşturur.
+Hizmet Ücretleri: PraxiumX ekosisteminde yer alan bazı hizmetler ve araçlar için ödeme aracı olarak kullanılacaktır.
 
-4. Yol Haritası (Roadmap)
-Aşama 1: Temel Geliştirme: Sözleşmelerin tamamlanması, denetlenmesi ve test ağlarında (testnet) yayınlanması.
+Ekosistem Erişimi: Belirli bir miktarda PRX token'ı elinde tutmak, özel etkinliklere, ön satışlara ve diğer ayrıcalıklı fırsatlara erişim sağlayacaktır.
 
-Aşama 2: Lansman ve Likidite: Mainnet lansmanı ve Uniswap üzerinde likidite sağlanması.
+Merkeziyetsiz Yönetişim Modeli
+PraxiumX'in yönetişim modeli, projenin merkeziyetsiz bir şekilde ilerlemesini sağlamayı amaçlamaktadır. Projenin uzun vadeli başarısı, topluluğun ortak kararlarına dayanacaktır.
 
-Aşama 3: Topluluk Geliştirme: Aktif topluluk etkinlikleri ve kullanıcı kazanımı kampanyaları.
+Rol Tabanlı Erişim Kontrolü
+Akıllı sözleşmelerimiz, OpenZeppelin'in AccessControl modülünü kullanarak belirli rollere yetkiler atar. Bu roller, projenin en hassas işlevlerini yönetir ve merkeziyetsiz yönetişim yol haritasını destekler:
 
-Aşama 4: Ekosistem Geliştirme: İlk PraxiumX tabanlı dApp'lerin veya ortaklıkların duyurulması.
+DEFAULT_ADMIN_ROLE: Kritik sözleşme parametrelerini ve diğer rolleri yönetme yetkisine sahiptir. Bu rol için, operasyonel güvenliği artırmak amacıyla bir çoklu imza (multisig) cüzdanı kullanılması planlanmaktadır.
 
-Aşama 5: Gelecek Vizyonu: Yönetim yapısının merkeziyetsiz hale getirilmesi ve yeni ürünlerin entegrasyonu.
+MINTER_ROLE: Sınırlı miktarda yeni token basma yetkisine sahiptir.
+
+PAUSER_ROLE: Beklenmedik durumlarda sözleşme işlemlerini geçici olarak duraklatma yetkisine sahiptir. Bu yetki, acil durumları yönetmek için bir güvenlik mekanizmasıdır.
+
+Yönetişim Süreci
+Topluluk odaklı yönetişim süreci aşağıdaki adımlarla işleyecektir:
+
+Teklif Sunumu: PRX token'ı olan herkes, belirli bir eşiği aşan bir miktar PRX kilitleyerek veya stake ederek bir yönetim teklifi sunabilir.
+
+Tartışma ve Oylama: Teklif, belirli bir süre boyunca (örneğin, 72 saat) topluluk tarafından tartışmaya açılır. Oylama süreci, zincir üstü (on-chain) olarak gerçekleşir.
+
+Uygulama: Oylamayı kazanan teklifler, geliştirme ekibi tarafından onaylanır ve Timelock mekanizması ile belirli bir gecikmenin ardından akıllı sözleşmeye uygulanır. Bu gecikme, topluluğa son dakika itirazları için zaman tanır.
+
+Bu model, hem merkeziyetsizliği teşvik eder hem de projenin güvenliğini ve istikrarını korur.
+
+Yol Haritası (Roadmap)
+PraxiumX, aşamalı bir yaklaşımla geliştirilecek ve topluluğa sunulacaktır. Projenin yol haritası, şeffaflık ve düzenli ilerleme sağlamak için tasarlanmıştır.
+
+Faz 1: Geliştirme ve Denetim
+Akıllı Sözleşme Geliştirme: PraxiumX token ve yükseltilebilir sözleşmelerin tamamlanması.
+
+Birim Testleri: Hardhat veya Foundry gibi bir geliştirme ortamında kapsamlı birim ve entegrasyon testlerinin yapılması.
+
+Güvenlik Denetimi: Saygın bir akıllı sözleşme denetim firması tarafından kodun bağımsız olarak incelenmesi.
+
+Denetim Raporunun Yayınlanması: Topluluk güvenini artırmak için denetim bulgularının ve çözümlerinin şeffaf bir şekilde paylaşılması.
+
+Faz 2: Lansman ve Topluluk Oluşturma
+Testnet Dağıtımı: Token'ın Ethereum Sepolia gibi bir test ağında dağıtılması ve açık testler için hazır hale getirilmesi.
+
+PraxiumX DApp Lansmanı: Kullanıcıların token'ları yönetebileceği ve etkileşime geçebileceği ilk versiyon dApp'in yayına alınması.
+
+Likidite Sağlama: Uniswap gibi merkeziyetsiz bir borsa üzerinde ilk likidite havuzunun oluşturulması.
+
+Topluluk Başlangıç Teşvikleri: Erken benimseyenleri ödüllendirmek için ilk airdrop ve teşvik programlarının başlatılması.
+
+Faz 3: Genişleme ve Yönetişim
+Zincir Üstü (On-chain) Yönetişim Platformu: Oylama ve teklif sunma mekanizmalarını içeren tam teşekküllü bir yönetişim platformunun yayına alınması.
+
+Ekosistem Fonları ve Hibeler: Projenin büyümesine katkı sağlayacak geliştiricileri ve projeleri desteklemek için hibe programlarının başlatılması.
+
+Gelecek Ortaklıklar: Diğer Web3 projeleriyle stratejik ortaklıklar kurularak ekosistem entegrasyonunun genişletilmesi.
+
+Ekip ve Vizyon
+PraxiumX'in arkasında, blockchain teknolojisi, finans ve yazılım geliştirme alanlarında uzmanlaşmış tutkulu bir ekip bulunmaktadır. Misyonumuz, merkeziyetsizliği ve topluluğu merkeze alan bir ekosistem inşa etmektir.
+
+[İsim Soyisim]: Kurucu ve CEO
+
+[İsim Soyisim]: Baş Teknoloji Sorumlusu (CTO)
+
+[İsim Soyisim]: Topluluk ve Pazarlama Lideri
